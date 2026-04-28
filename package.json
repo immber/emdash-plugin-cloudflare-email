@@ -1,0 +1,22 @@
+{
+  "name": "emdash-plugin-cloudflare-email",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": { "import": "./dist/index.mjs", "types": "./dist/index.d.ts" },
+    "./sandbox": { "import": "./dist/sandbox-entry.mjs" }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "emdash": "*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260426.1",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
