@@ -100,7 +100,7 @@ export default definePlugin({
             { type: "header", text: "Cloudflare Email Settings" },
             {
               type: "context",
-              text: "Must be a verified address or domain in Cloudflare Email Routing.",
+              text: "Must be an address for a domain you have already configured in Cloudflare Email Service",
             },
             {
               type: "form",
