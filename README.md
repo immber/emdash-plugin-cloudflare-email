@@ -11,7 +11,7 @@ You must have [Cloudflare Email Service](https://developers.cloudflare.com/email
 ## Installation
 
 ```bash
-npm install @coastweb/@coastweb/emdash-plugin-cloudflare-email
+npm install @coastweb/emdash-plugin-cloudflare-email
 ```
 
 ### 1. Add the `SEND_EMAIL` binding in `wrangler.jsonc` on your emdashcms worker
