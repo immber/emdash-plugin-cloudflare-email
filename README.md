@@ -1,4 +1,4 @@
-# emdash-plugin-cloudflare-email
+# @coastweb/emdash-plugin-cloudflare-email
 
 An [EmDash CMS](https://docs.emdashcms.com/introduction/) plugin that adds email sending through [Cloudflare Email Service](https://developers.cloudflare.com/email-service/) as an email provider.
 
@@ -11,7 +11,7 @@ You must have [Cloudflare Email Service](https://developers.cloudflare.com/email
 ## Installation
 
 ```bash
-npm install emdash-plugin-cloudflare-email
+npm install @coastweb/@coastweb/emdash-plugin-cloudflare-email
 ```
 
 ### 1. Add the `SEND_EMAIL` binding in `wrangler.jsonc` on your emdashcms worker
@@ -29,7 +29,7 @@ npm install emdash-plugin-cloudflare-email
 ### 2. Register the plugin in `astro.config.mjs`
 
 ```js
-import { cloudflareEmailPlugin } from "emdash-plugin-cloudflare-email";
+import { cloudflareEmailPlugin } from "@coastweb/emdash-plugin-cloudflare-email";
 
 export default defineConfig({
   integrations: [

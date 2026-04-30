@@ -5,7 +5,7 @@ export function cloudflareEmailPlugin(): PluginDescriptor {
     id: "cloudflare-email",
     version: "0.1.0",
     format: "standard",
-    entrypoint: "emdash-plugin-cloudflare-email/sandbox",
+    entrypoint: "@coastweb/emdash-plugin-cloudflare-email/sandbox",
     options: {},
     capabilities: ["email:provide"],
     adminPages: [{ path: "/settings", label: "Cloudflare Email Settings", icon: "settings" }],
