@@ -8,6 +8,15 @@ An [EmDash CMS](https://docs.emdashcms.com/introduction/) plugin that adds email
 
 You must have [Cloudflare Email Service](https://developers.cloudflare.com/email-service/) (available in public beta) enabled on the same Cloudflare account where you are deploying your emdash worker.  You will need to configure a sending domain in Cloudflare before you can use this plugin.
 
+## Version compatibility
+
+| Plugin version | EmDash version | Notes |
+| --- | --- | --- |
+| `0.2.x` | `1.5.0` and later | Tested on EmDash 1.5.0. The sandbox entry is a plain `{ hooks, routes }` object (`satisfies SandboxedPlugin`). EmDash 1.x rejects `definePlugin()` without an `id`, so `0.1.x` fails on 1.x with `definePlugin() requires id (got undefined)`. |
+| `0.1.x` | `0.8.x` | Uses `definePlugin()`. Last release for EmDash 0.x. |
+
+Upgrading EmDash from 0.x to 1.x? Upgrade this plugin to `0.2.0` at the same time. Versions of EmDash between `0.8` and `1.5` have not been tested with either release.
+
 ## Installation
 
 ```bash

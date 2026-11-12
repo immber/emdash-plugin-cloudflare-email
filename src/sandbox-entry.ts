@@ -1,5 +1,4 @@
-import { definePlugin } from "emdash";
-import type { PluginContext } from "emdash";
+import type { PluginContext, SandboxedPlugin } from "emdash/plugin";
 
 interface DeliverEvent {
   message: { to: string; subject: string; text: string; html?: string };
@@ -29,7 +28,7 @@ function buildMimeMessage(from: string, to: string, subject: string, text: strin
   return lines.join("\r\n");
 }
 
-export default definePlugin({
+export default {
   hooks: {
     "email:deliver": {
       exclusive: true,
@@ -120,4 +119,4 @@ export default definePlugin({
       },
     },
   },
-});
+} satisfies SandboxedPlugin;

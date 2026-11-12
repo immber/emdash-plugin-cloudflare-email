@@ -1,6 +1,6 @@
 {
   "name": "@coastweb/emdash-plugin-cloudflare-email",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "exports": {
     ".": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/immber/emdash-plugin-cloudflare-email"
   },
   "peerDependencies": {
-    "emdash": "*"
+    "emdash": ">=1.5.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260426.1",
